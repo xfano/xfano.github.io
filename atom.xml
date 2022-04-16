@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Chani</title>
+	<link href="https://xfano.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://xfano.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-04-16T00:00:00+00:00</updated>
+	<id>https://xfano.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Void Linux: How to Install KDE Plasma Desktop</title>
+		<published>2022-04-16T00:00:00+00:00</published>
+		<updated>2022-04-16T00:00:00+00:00</updated>
+		<link href="https://xfano.github.io/posts/void-linux-installing-kde-plasma-desktop/" type="text/html"/>
+		<id>https://xfano.github.io/posts/void-linux-installing-kde-plasma-desktop/</id>
+		<content type="html">&lt;p&gt;There’s no official KDE ISO available for &lt;a rel=&quot;noopener nofollow&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;voidlinux.org&#x2F;download&#x2F;&quot;&gt;Void Linux&lt;&#x2F;a&gt;; however, &lt;a rel=&quot;noopener nofollow&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.voidbuilds.xyz&#x2F;&quot;&gt;Void Builds&lt;&#x2F;a&gt; created an &lt;a rel=&quot;noopener nofollow&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;voidbuilds.xyz&#x2F;download&#x2F;&quot;&gt;unofficial version&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;But if you’ve already installed Void Linux and prefer installing KDE Plasma Desktop from there on, here’s what you can do:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;1. Update the package manager XBPS:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo xbps-install -u xbps&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;2. Sync and update the XBPS repository:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo xbps-install -Su&lt;&#x2F;code&gt; &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;3. Install KDE Plasma Desktop, its base applications, and Xorg:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo xbps-install kde5 kde5-baseapps xorg&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;4. Enable KDE Plasma:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo ln -s &#x2F;etc&#x2F;sv&#x2F;sddm &#x2F;var&#x2F;service&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;5. Reconfigure KDE Plasma:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo xbps-reconfigure -f plasma-workspace&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;6. Reboot Void Linux:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo reboot&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;&#x2F;strong&gt; After rebooting, I was able to choose KDE Plasma. But I had only been met with a black screen and a cursor. So I had to reboot again; maybe because I wasn’t able to reconfigure it, which is step 5. &lt;&#x2F;p&gt;
+&lt;p&gt;After the second reboot and logging into KDE Plasma, I was met with a wallpaper and a cursor. I figured I had to make the panel and the widgets, which is not a problem at all. Then I did Step 5.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;TIP:&lt;&#x2F;strong&gt; If there’s still a problem running KDE Plasma, you might want to &lt;strong&gt;disable elogind&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+</content>
+	</entry>
+</feed>
