@@ -4,6 +4,8 @@ title = "Chani"
 
 default_language = "en"
 
+theme = "d3c3nt"
+
 generate_feed = true
 feed_filename = "atom.xml"
 
@@ -23,3 +25,11 @@ external_links_no_follow = true
 smart_punctuation = true
 
 [extra]
+d3_author = "Chani"
+
+d3_nav = [
+  { name = "HOME", path = "/" },
+  { name = "POSTS", path = "/posts" }
+]
+
+d3_icon = "/icon.png"
